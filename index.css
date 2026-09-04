@@ -4,22 +4,34 @@
 }
 html {
     background-color:bisque;
+    border-radius: 10px;
 }
 body {
     margin: 0;
-    padding: 10px;
+    padding-left: 10px;
     font-family: "Retro Floral", Arial;
     display: flex;
     flex-direction: column;
-    min-width: 250px;
-    max-height: 600px;
+    min-width: 350px;
+    min-height: 100px;
+    max-height: 500px;
 }
+.heading-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin: 16px 0;
+}
+
 h1{
     font-size: 25px;
     color: rgb(1, 61, 6);
+    margin: 0;
 }
 input {
     margin-bottom: 4px;
+    margin-right: 6px;
     padding-left: 5px;
     padding-right: 5px;
     border-color:rgb(1, 61, 6);
@@ -36,26 +48,40 @@ button {
 
 button {
     color:bisque;
-    font-size: clamp(12px, 1.5vw, 22px);
+    font-size: 10px;
     background-color:rgb(1, 61, 6);
-    width: 15%;
+    width: 20%;
     border-style: none;
     padding-top: 5px;
     padding-bottom: 5px;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
+
+
 
 ul {
     list-style:none;
     padding-left: 0;
     color:rgb(1, 61, 6);
     margin-top: 15px;
-
 }
 
-a{
+a {
+   font-size: 13px;
+   color:rgb(1, 61, 6);
+   list-style:none;
+   font-style: italic;
+}
+
+.repo-link {
+    white-space: nowrap;
+}
+
+li a{
    color:rgb(3, 163, 17); 
    font-style: italic;
 }
+
 
 #delete-el {
     color:rgb(1, 61, 6);
@@ -65,3 +91,18 @@ a{
     border-width: 1.5px;
 
 }
+
+#delete-el:hover {
+    background-color:rgb(1, 61, 6);
+    color:bisque;
+    cursor: pointer;
+}
+
+#save-el:hover, #savetab-el:hover {
+    color:rgb(1, 61, 6);
+    background-color: bisque;
+    border-style: solid;
+    border-color:rgb(1, 61, 6);
+    cursor: pointer;
+}
+
